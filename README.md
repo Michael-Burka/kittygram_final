@@ -1,26 +1,41 @@
-#  Как работать с репозиторием финального задания
+# Kittygram Containers and CI/CD
 
-## Что нужно сделать
+## Overview
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+Kittygram is an engaging web application designed for cat enthusiasts to share and relish cat photos. This document highlights the journey of configuring and deploying Kittygram with containers and automated CI/CD pipelines.
 
-## Как проверить работу с помощью автотестов
+## What Was Accomplished?
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
+In this project, the following tasks were completed:
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+- **Docker Containerization**: Dockerfiles were crafted for `kittygram_backend`, `kittygram_gateway`, `kittygram_frontend`, and `postgres:13`.
+- **Data Management**: Docker volumes ensured consistent storage for static/media files and PostgreSQL data.
+- **Backend Optimization**: Seamless integration with PostgreSQL was achieved, paired with an `.env` file for environment variable management.
+- **Docker Orchestration**: Extended `docker-compose.yml` to comprise volume mounts and environment variable configurations.
+- **CI/CD via GitHub**: Leveraged GitHub Actions for an uninterrupted flow of automated testing and deployment.
+- **Server Preparation**: The server was primed for deployment, which included server sanitation and Nginx configurations.
+- **Auto Deployment**: Kittygram was autonomously deployed on the server using GitHub Actions.
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+## Technologies Used
 
-## Чек-лист для проверки перед отправкой задания
+- **Docker & Docker Compose**: Employed for creating a standardized containerized environment and simplifying orchestration tasks.
+- **PostgreSQL**: Chosen as the robust database solution.
+- **GitHub Actions**: Central to our CI/CD, it facilitates smooth automated testing and deployment.
+- **Nginx**: Configured as the web server and also as a reverse proxy.
+- **Django**: Backbone of our backend operations.
+- **React.js**: Powers the interactive frontend.
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+
+## How to Verify the Project
+
+To experience the features of Kittygram, you're invited to:
+- Visit Kittygram Frontend at [https://kittygram13.ddns.net](https://kittygram13.ddns.net). Explore the photo-sharing functionalities, user interactions, and responsiveness of the site.
+
+## Contact Information 
+
+For any inquiries, feedback, or issues related to the Kittygram project, please reach out to: 
+
+- **Name**: Michael Burka 
+- **Email**: [contact@michaelburka.com](mailto:contact@michaelburka.com) 
+- **GitHub**: [Michael-Burka's GitHub Profile](https://github.com/Michael-Burka/) 
+- **LinkedIn**: [Michael-Burka's LinkedIn Profile](https://www.linkedin.com/in/michael-burka-485832251/) 
