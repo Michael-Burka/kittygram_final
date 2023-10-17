@@ -15,19 +15,19 @@ services:
     image: michaelburka/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static
+      - static:/backend_static
       - media:/app/media/
   frontend:
     image: michaelburka/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static:/frontend_static
+      - static:/static
   gateway:
     image: michaelburka/kittygram_gateway
     env_file: .env
     volumes:
-      - static:/static
+      - static:/static/
       - media:/app/media/
     ports:
       - 9000:80
