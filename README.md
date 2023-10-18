@@ -20,9 +20,8 @@ Kittygram is a study project that aims to emulate a real-world application scena
 ### Web Server Configuration
 - **Nginx**: Understood the principles of web server configuration and its role as a reverse proxy, ensuring efficient handling of client requests.
 
-### Backend and Frontend Development
-- **Django**: Enhanced my backend development skills, focusing on scalability and security.
-- **React.js**: Honed frontend development techniques, ensuring responsiveness and user-friendly interfaces.
+### Backend Development
+- **Django**: Strengthened my backend development techniques, emphasizing scalability, security, and seamless integration with frontend applications.
 
 ## Project Accomplishments
 
