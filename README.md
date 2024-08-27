@@ -29,12 +29,6 @@ Kittygram is a study project that aims to emulate a real-world application scena
 - Established automated testing and deployment pipelines.
 - Successfully deployed Kittygram on a remote server, replicating real-world deployment scenarios.
 
-
-## How to Explore Kittygram
-
-To experience the features of Kittygram, you're invited to:
-- Visit Kittygram Frontend at [https://kittygram13.ddns.net](https://kittygram13.ddns.net). Explore the photo-sharing functionalities, user interactions, and responsiveness of the site.
-
 ## Feedback and Contact
 
 This project was a learning journey, and feedback is essential for growth. If you have suggestions, inquiries, or just wish to discuss any aspect of this project:
