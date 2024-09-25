@@ -1,4 +1,4 @@
-# Kittygram: Containers and CI/CD Study Project
+# Kittygram: Containers and CI/CD
 
 ## Overview
 
